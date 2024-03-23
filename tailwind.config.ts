@@ -6,6 +6,7 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+
   theme: {
     extend: {
       colors: {
@@ -18,13 +19,18 @@ const config: Config = {
         borderGray: "#868686",
         questionMarkGray: "#464646",
         correctGreen: "#299641",
-        wrongRed: " #962929;"
+        wrongRed: " #962929"
       },
       spacing: {},
       fontFamily: {
+        
         metropolis: "Metropolis",
       },
     },
+    screens:{
+      '2xl':{'max': '1535px'},
+      'xl':'1000px'
+    }
   },
   plugins: [],
 }
